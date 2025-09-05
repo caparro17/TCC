@@ -1,0 +1,82 @@
+.container {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alinhamento{
+    margin: 15px 0 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    width: 200px; /* Largura fixa para os botões */
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto; /* Centraliza os botões */
+    display: block; /* Faz com que os botões se comportem como blocos */
+}
+
+input[type="submit"] {
+    background-color: #28a745;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.btnBack {
+    background-color: #dc3545; /* Cor vermelha */
+    width: 180px; /* Largura fixa para os botões */
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px auto; /* Centraliza os botões */
+    display: block; /* Faz com que os botões se comportem como blocos */
+}
+
+.btnBack:hover {
+    background-color: #c82333; /* Tom mais escuro ao passar o mouse */
+}

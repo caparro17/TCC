@@ -1,0 +1,77 @@
+.carousel-control-color {
+    color: white;
+}
+
+.carousel-control-width {
+    width: 15%;
+}
+
+.carousel-control-opacity {
+    opacity: 5;
+}
+
+.carousel-control-transition {
+    opacity: 15s ease;
+}
+
+.carousel-control-icon-filter {
+    icon: null;
+}
+
+.carousel-indicator-width {
+    width: 30px;
+}
+
+.carousel-indicator-height {
+    height: 3px;
+}
+
+.carousel-indicator-hit-area-height {
+    height: 10px;
+}
+
+.carousel-indicator-spacer {
+    white-space: 3px;
+}
+
+.carousel-indicator-opacity {
+    opacity: 5;
+}
+
+.carousel-indicator-transition {
+    transition: opacity .6s ease;
+    ;
+}
+
+.carousel-caption-width {
+    width: 70%;
+}
+
+.carousel-caption-color {
+    color: white;
+}
+
+.carousel-caption-padding-y {
+    padding: 1.25rem;
+    ;
+}
+
+.carousel-control-icon-width {
+    width: 2rem;
+    ;
+}
+
+.carousel-control-prev-icon-bg {
+    url:("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>");
+}
+
+.carousel-control-next-icon-bg {
+    url:("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+    carousel-transition-duration: 6s;
+}
+
+carousel-transitio {
+    transform: carousel-transition-duration ease-in-out;
+}
+
+/*Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)*/
