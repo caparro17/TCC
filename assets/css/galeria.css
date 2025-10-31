@@ -24,14 +24,14 @@
     width: 330px;
     /*Largura minima*/
     height: 250px;
-    border: 1px solid #cdcacad6;
-    border-radius: 2%;
+    border-radius: 7%;
     text-align: center;
 }
 
 img{
     height: 250px;
     width: 100%;
+    border-radius: 7% ;
 }
 
 .item-cidades-recomendadas a {

@@ -20,10 +20,9 @@
 .item-cidades-recomendadas {
     display: flex;
     flex-direction: column;
-    width: 240px;
+    width: 200px;
     /*Largura minima*/
-    height: 240px;
-    border: 1px solid #897f7fd6;
+    height: 350px;
     border-radius: 7%;
     text-align: center;
     align-items: center;

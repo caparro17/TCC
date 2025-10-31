@@ -2,12 +2,12 @@ document.getElementById('ConsultaForm').addEventListener('submit',function(event
     event.preventDefault();
 
     //obter os valores digitados pelo ususario no forms de login
-    const email = document.getElementById('email').value;
+    const nome = document.getElementById('nome').value;
     const senha = document.getElementById('email').value;
 
     //montar o objeto para enviar a API
     const datas ={
-        email:email,
+        nome:nome,
         senha:senha,
     };
 
@@ -27,7 +27,7 @@ document.getElementById('ConsultaForm').addEventListener('submit',function(event
             return response.json();
         }
         else{
-            alert("Email ou senha incorretos")
+            alert("nome ou senha incorretos")
         }
     })
 

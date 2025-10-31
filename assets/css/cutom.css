@@ -8,13 +8,13 @@ header {
     align-items: center;
     width: 100%;
     height: 150px;
-    background-color: #ff0000c7;
+    background-color: #ff3616;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 238, 0, 0.762);
+    background-color: #ffff56;
     height: 45px;
 }
 
@@ -96,23 +96,17 @@ nav ul li:hover {
     height: 150px;
 }
 
-.icones {
-    font-size: larger;
-}
-
-
 .color-black {
     color: rgb(15, 15, 15) !important;
     text-decoration: none !important;
 }
+
 footer {
 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(255, 210, 7);
-    background-color: hsla(0, 100%, 50%, 0.819);
+    background-color: #ff3616;
     height: 200px;
-
 }
