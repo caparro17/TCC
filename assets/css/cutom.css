@@ -57,12 +57,14 @@ nav ul li:hover {
     margin: 3% 0 0 10%;
     width: 30%;
     height: 120px;
+    align-items: center;
     
 }
 
 .logo {
     height: 90px;
     border-radius: 15%;
+    align-items: center;
 }
 
 .pesquisa {

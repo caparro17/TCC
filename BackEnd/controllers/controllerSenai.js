@@ -3,7 +3,7 @@ const modelSenai = require('../models/modelSenai');
 const controllerSenai = {
 
     //Controller para registrar 
-    registrarColaborador: async (req, res) => {
+    cadastrarProduto: async (req, res) => {
         const { nome, NCM, peso, fardo, preco } = req.body;
 
         try {
