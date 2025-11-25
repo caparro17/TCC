@@ -1,14 +1,12 @@
-require('dotenv').config(); 
-
+//Configuração da string de conexão com o banco de dados
 const mysql = require("mysql2/promise");
 
 const connection = mysql.createPool({  
-
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "admin",
+    database: "donakota"
 });
 
 module.exports = connection;

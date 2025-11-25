@@ -1,27 +1,31 @@
-require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
-const verificarConexao = require("../services/conexao");
-const Router = require("../rotas/routers")
+const conexao = require("../config/db")
+const routerUsuario = require("../rotas/routersUsuario");
+const routerProduto = require('../rotas/routerProduto');
+const routerEstoque = require('../rotas/routerEstoque');
 
 const app = express();
-const port = process.env.PORT || 3002;
+const port = 3001;
 
-// Middlewares
 app.use(express.json());
 app.use(cors());
-app.use(Router);
+app.use(routerUsuario);
+app.use(routerProduto);
+app.use(routerEstoque);
 
-const inicio = async () => {
+const verificarConexao = async () => {
   try {
-    await verificarConexao(); 
-    app.listen(port, "0.0.0.0", () => {
-      console.log(`Servidor rodando na URL: http://localhost:${port}`);
+    await conexao.query("SELECT 1");
+    console.log("Conexão com o banco de dados está ativa");
+    app.listen(port, () => {
+      console.log(`Servidor rodando na url: http://localhost:${port}`);
     });
   } catch (erro) {
-    console.error("Não foi possível iniciar o servidor devido a falha na conexão.");
+    console.log("Erro: Falha na conexão com o banco de dados \n" + erro);
   }
 };
 
-inicio();
+verificarConexao();
+
 
